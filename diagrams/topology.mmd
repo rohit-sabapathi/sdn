@@ -1,0 +1,7 @@
+graph TD
+    h1[Host: h1<br>IP: 10.0.0.1] --- s1[Switch: s1]
+    s1 ---|Primary Link| s2[Switch: s2]
+    s2 ---|Primary Link| s4[Switch: s4]
+    s1 ---|Alternate Link| s3[Switch: s3]
+    s3 ---|Alternate Link| s4[Switch: s4]
+    s4 --- h2[Host: h2<br>IP: 10.0.0.2]
